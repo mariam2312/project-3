@@ -1,0 +1,183 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+:root{
+    --main--color:rgb(243, 118, 2);
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.settings-box {
+    position: fixed;
+    background-color: white;
+    width: 200px;
+    min-height: 100vh;
+    left: -200px;
+    top: 0;
+    z-index: 100;
+}
+.settings-box .icon{
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.settings-box .fa-gear{
+    padding: 4px 0;
+    width: 30px;
+}
+.settings-box.open {
+    left: 0;
+}
+
+
+.settings-box .option-box{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(205, 214, 214);
+}
+
+.settings-box .color-list{
+    list-style: none;
+    display: flex;
+}
+.settings-box .color-list li.active{
+    opacity: 1;
+    width: 22px;
+    height: 22px;
+}
+.settings-box li {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 3px;
+    opacity: 0.5;
+    
+}
+
+.settings-box .one{
+
+    background-color:aqua;
+}
+.settings-box .two{
+    background-color: yellow;
+}
+.settings-box .three{
+    background-color: blue;
+}
+.settings-box .four{
+    background-color: red;
+}
+
+
+
+.option-box button {
+    width: 50px;
+    background-color: var(--main--color);
+    color: white;
+    margin-top: 15px;
+    border-radius: 4px;
+    opacity: .5;
+    cursor: pointer;
+}
+.option-box  button.active{
+    opacity: 1;
+
+}
+
+.landing-page{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0,0 ,.6 );
+    width: 100%;
+    height: 100%;
+
+}
+.header , .navbar , .header ul li a {
+    color: white;
+}
+.dropdown-menu .dropdown-item{
+
+    color: var(--main--color);
+}
+.header ul li > a:hover,
+.header ul .active{
+    color: var(--main--color);
+    transition: .3s;
+}
+.header .navbar-brand{
+    font-size: 30px;
+    margin-right: 600px;
+}
+.introduction{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+.introduction h1{
+    color: var(--main--color);
+    font-size: 40px;
+}
+.introduction p{
+    color: white;
+    line-height: 30px;
+}
+
+.info-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 20px;
+}
+.about-title{
+    padding-top: 70px;
+    text-align: center;
+    color: var(--main--color);
+}
+.about-img img {
+    width: 300px;
+    height: 300px;
+}
+.line{
+    width: 80px;
+    height: 5px;
+    background-color: aqua;
+    margin: auto;
+    
+}
+.services{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.services .info-box{
+    flex:1;
+}
+.ser-title , .skill-title{
+    color: var(--main--color);
+    text-align: center;
+}
+.services p{
+    margin-top: 40px;
+    line-height: 1.8;
+}
+.ser-img img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
